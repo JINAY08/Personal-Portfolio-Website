@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navig{
+    position: fixed;
+    width:100%;
+    padding:10px 0;
+    transition: all 0.4s ease;
+    height: 10vh;
+    text-align: center;
+    /* background: orange; */
+}
+
+.navig.pers{
+    background: greenyellow;
+    padding: 10 px 0;
+    z-index: 5;
+}
+
+.navig.pers .list li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navig.pers .list li a{
+    color: darkgreen;
+    transition: 0.3s ease-in-out;
+}
+
+.navig.pers .list li a:hover{
+    color: black;
+}
+
+.navig .list li a{
+    font-family: 'KoHo', sans-serif;
+    color:purple;
+    transition: 0.4s ease-in-out;
+    border-radius: 4 px ;
+}
+
+.navig .list li a:hover{
+    color:orangered;
+}
+
+.navig .header{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color:#fff;
+    align-content: center;
+}
+.navig .list li{
+    display: inline-block;
+    font-size:22px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 300;
+}
+
+.headblock{
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+
+
+.navig .headblock{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.main{
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+}
+
+.main .headblock{
+    margin-top: auto;
+    margin-left: 45px;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.main_content{
+    justify-content: space-evenly;
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.icons a i:hover{
+    opacity: 0.8;
+}
+
+.blast:hover{
+    color: white;
+    transition: ease-in;
+}
+
+
+.button{
+    cursor: pointer;
+    display:none;
+}
+
+/* styling for aboutme section */
+.about{
+    background: cyan;
+    padding-top: 60px;
+}
+
+.about .title, .contact .title, .projects .title, .accomplishment .title{
+    font-family: 'Zen Tokyo Zoo','cursive';
+    font-weight: 550;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: white;
+    border-bottom-color: black;
+    /* width: 250px; */
+    margin: auto;
+    background: cyan;
+}
+
+.about .knowme .card{
+    text-align: center;
+    width: calc(33% - 20px);
+    border-style: solid;
+    border-color: #aaffff;
+    border-radius: 5px;
+    /* padding: 20px 20px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    background: #00dddd;
+    display: inline-flex;
+    min-height:170px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.about .knowme .card .institutions i{
+    color: red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.about .knowme .card:hover{
+    transform: scale(1.1);
+}
+
+.about .resume{
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+.about .resume .resume_content{
+    text-align: center;
+    margin:auto;
+    width: 180px;
+    height: 40px;
+    font-size: 27px;
+    font-family: 'Fira Sans', 'sans-serif';
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    border-color: white;
+    transition: 0.3s ease-in;
+    border-radius: 7px;
+    border-style: double;
+}
+
+.about .resume .resume_content:hover{
+    border-color: crimson;
+    background: white;
+    color: crimson;
+    border-style: ridge;
+}
+
+.blog{
+    text-align: center;
+    font-size: 45px;
+    color: red;
+    /* margin-top: 20px; */
+    font-family:'KoHo', sans-serif;
+    background: cyan;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.blog .writeups{
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    height: 70vh;
+    background: #ddffff;
+    border-color: #00dddd;
+    margin-left: auto;
+    margin-right: auto;
+    width : 75%;
+    color : black;
+}
+
+/* projects n courses styling goes here */
+
+.projects{
+    background: cyan;
+    padding-top: 60px;
+}
+
+.project{
+    perspective: 1000px;
+}
+
+.projects .subtitle{
+    background: cyan;
+}
+
+.cardinner{
+    text-align: center;
+    width: 210px;
+    border-radius: 5px;
+    /* padding: 20px 20px; */
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    height:210px;
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.8s linear;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+.cardinner:hover{
+    transform: rotateY(180deg); 
+} 
+
+.cardinner .cardfront, .cardinner .cardback{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.cardinner .cardfront{
+    background: #00dddd;
+    color: white;
+    text-align: center;
+    height: 100%;
+    border-style: solid;
+    border-color: #aaffff;
+}
+
+.cardinner .cardback{
+    text-align: center;
+    background: white;
+    color: #00dddd;
+    transform: rotateY(180deg);
+    height: 100%;
+    border-style: solid;
+    border-color: #00dddd;
+    font-size: 150%;
+    text-overflow: clip;
+    font-family: 'KoHo','sans-serif';
+}
+
+.cardinner .cardfront .heading{
+    font-size: 25px;
+    padding-top: 25%;
+
+}
+
+.cardinner .cardfront .image{
+    width: 205px;
+    height: 140px;
+    /* object-fit: cover;  */
+}
+
+.group{
+    border-style: solid;
+    border-radius: 75%;
+    border-color: white;
+    color: red;
+    text-align: center;
+}
+
+.owl-dots{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.owl-dots button.owl-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: lightgray;
+    margin-right: 10px;
+}
+
+.owl-dots button.owl-dot.active{
+    background: red;
+    width: 25px;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    width: 25px;
+  }
+  .owl-nav button.owl-prev {
+    left: 0;
+    background: grey;
+  }
+  .owl-nav button.owl-next {
+    right: 0;
+  }
+
+/* accomplishments styling goes here */
+.accomplishment{
+    background: cyan;
+    padding-top: 60px;
+}
+
+/* contact me styling goes here */
+
+.contact{
+    background: cyan;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* .contact .title{
+    font-family:'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: white;
+    width: 250px;
+    margin: auto;
+} */
+
+.contact .forms .contact_content{
+    width: 23%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-color: red;
+    border-style: solid;
+    margin-left: 150px;
+    margin-top: 80px;
+    background: #00dddd;
+}
+
+.contact .forms .contact_content .field input{
+    width: 92%;
+    border-radius: 6px;
+    height: 5vh;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact .forms .contact_content .field textarea{
+    width: 92%;
+    border-radius: 6px;
+    height: 20vh;
+    font-size: 15px;
+    border-style: solid;
+    outline: none;
+    resize: none;
+}
+
+.contact .forms .contact_content .field .submit button{
+     margin-right: 30px;
+     width: 100px;
+     height: 3vh;
+     border-radius: 8px;
+     background: red;
+     color: white;
+     cursor: pointer;
+}
+
+.contact .thanks{
+    font-family: 'Qahiri','sans-serif';
+    font-size: 100px;
+    color: orange;
+    padding-top: -400px;
+    padding-right: 20px;
+    /* margin-right: 20px; */
+    padding-left: 20px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+    margin-top: -200px;
+    border-radius: 60%;
+    border-style: double;
+    text-align: center;
+    background-color: white;
+}
+
+/* footer styling goes here */
+
+footer{
+    background: #00ddcc;
+    width: 100%;
+    text-align: center;
+    height: 6vh;
+    font-size: 20px;
+    padding-top:5px;
+    font-family: 'KoHo','sans-serif';
+    color: white;
+}
+
+
+@media (max-width:1250px){
+    .headblock{
+        padding:0 50px;
+    }
+    .button{
+        display: block;
+        color: white;
+        z-index: 999;
+    }
+
+    .navig .list{
+        position: fixed;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        bottom:0;
+        top:0;
+        background-color: black;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .button i.active:before{
+        content: "\f00d";font-family: FontAwesome;
+    }
+
+    .navig .list.active{
+        left:0;
+    }
+
+    .navig .list li{
+        display:block;
+    }
+
+    .navig .list li a{
+        display:inline-block;
+        font-size: 27px;
+        margin: 20px,0;
+        text-align: justify;
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    .navig .list li a:hover{
+        color: white;
+    }
+
+    .navig.pers .list.active{
+        left:0;
+    }
+
+    .navig.pers .list li{
+        display:block;
+    }
+
+    .navig.pers .list li a{
+        display:inline-block;
+        font-size: 27px;
+        margin: 20px,0;
+        text-align: justify;
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    .navig.pers .list li a:hover{
+        color: white;
+    }
+
+    .main{
+        background: cyan;
+        background-image: none;
+    }
+}
