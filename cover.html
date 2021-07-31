@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+    <head>
+        <meta charset= "utf-8">
+        <title>Stay Foolish</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel = "stylesheet" href = "{%static 'css/css3.css'%}">
+    </head>
+    <body>
+        <style>
+            .main{
+                background : url("{%static 'img/background.jpg'%}") no-repeat center;
+                background-color: cyan;
+            }
+        </style>
+        <!--navigation block is here-->
+        <nav class = "navig">
+            <div class = "headblock">
+                <div class = "button">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class = "header">Stay<span style="color: black;"><b>Foolish</b></span></div>
+                    <ul class = "list", style = "list-style-type: none;">
+                        <li><a href = "#about">About Me</a></li>&ensp;&ensp;
+                        <li><a href = "#projects">Projects N Courses</a></li>&ensp;&ensp;
+                        <li><a href = "#accomplishment">Accomplishments</a></li>&ensp;&ensp;
+                        <li><a href = "#contact">Contact Me</a></li>&ensp;&ensp;
+                    </ul>
+                      
+            </div>
+        </nav>
+
+        <!--cover block is here-->
+        <section class = "main">
+            <div class = "headblock">
+                <section id="section-home" class="section-full section-home js-page-home loaded">
+                <div class = "main_content">
+                    <h1 aria-label="Hey! I'm inay,Welcome" class="blast-root">
+                        <span class = 'blast' aria-hidden="true" style = "opacity: 1;">H</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">e</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">y</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">!</span>
+                        <br>
+                        <span class = 'blast' aria-hidden="true" style = "opacity: 1;">I</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">'</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">m</span>
+                        <img width="45" height="45" src="https://jacekjeznach.com/wp-content/themes/new/img/logo.png" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo"><span class = 'blast' aria-hidden="true" style = "opacity: 1;">i</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">n</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">a</span><span class = 'blast' aria-hidden="true" style = "opacity: 1;">y</span>                        <br>
+                        <div class = "icons">
+                            <a href = "https://www.linkedin.com/in/jinay-dagli-386701201?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBzC7QQjjQKa9iPApj04hGQ%3D%3D"><i class="fab fa-linkedin fa-xs" style = "color: navy;"></i></a>
+                            <a href = "https://github.com/JINAY08"><i class="fab fa-github fa-xs" style="color: black;"></i></a>
+                            <a href = "mailto: jinaydagli@gmail.com"><i class="fas fa-envelope fa-xs" style = "color: black;"></i></a>
+                            <a href="https://www.instagram.com/jinay812/"><i class="fab fa-instagram fa-xs" style="color: violet;"></i></a>
+                            <a href="https://www.facebook.com/jinay.dagli/"><i class="fab fa-facebook fa-xs" style="color:navy;"></i></a>       
+                        </div>
+                        
+                </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- about me section is here -->
+        <section class = "about" id = "about">
+            <div class = "title">
+                About Me</div>
+            <div class="knowme">
+                <div class = "card">
+                    <div class = "institutions">
+                        <i class="fas fa-university fa-2x"></i>
+                        <p>
+                            I am currently studying at IIT Gandhinagar(expected 2024),India, majoring in Electrical Engineering. I did my schooling from The New Tulip International School in Ahmedabad!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class = "institutions">
+                        <i class="fas fa-table-tennis fa-2x"></i>
+                        <p>
+                            I usually like to play cricket and table-tennis and travelling. Recently, I have also been into reading books(non-fiction,mostly):-)  Do check out the 'Books I Read' section!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class = "institutions">
+                        <i class="fas fa-code fa-2x"></i>
+                        <p>
+                            The first programming language I learnt was Python. I then went on to learn C++ and C. I know a bit of Javascript. This website has been created using Django,HTML,CSS and Javascript. 
+                        </p>
+                    </div>
+                </div>
+                <div class = "blog">
+                <!-- I do write sometimes... -->
+                    <div class = "writeups">
+                    </div>
+                </div>
+                <div class = "resume">
+                    <div class = "resume_content">
+                    CV/Resume
+                    </div>
+                </div><br><br>
+        </section>
+<!-- Projects N Courses Section Starts Here -->
+        <section class="projects" id="projects">
+            <div class = "title">Projects N Courses</div>
+            <div class = "subtitle1"><h1> Courses: </h1></div>
+                <div class = "project owl-carousel">
+                    <div class="cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Engineering <br> Graphics <br><i class="fas fa-drafting-compass"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            Learnt the use of Autodesk Inventor and engineering drawing.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Introduction to <br> Computing<br><i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course was an introduction to Python programming and computing,in general.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Intro to <br> Electrical Systems <br><i class="fas fa-car-battery"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course covered the basics of electrical systems and devices.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Analog and <br> Digital Systems <br><i class="fas fa-wave-square"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course covered the basics of analog and digital circuits.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Design <br> and Innovation <br><i class="fas fa-pencil-ruler"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            We had to observe, investigate and come up with a solution for a problem around us.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Professional <br> Writing <br><i class="fas fa-paragraph"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course covered the basics of writing documents required for professional communication.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Electromagnetism <br> and Quantum <br><i class="fas fa-atom"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            Basics of electromagnetism amd quantum physics were being covered.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Linear Algebra <br> and Calculus <br><i class="fas fa-square-root-alt"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            Basics of linear algebra amd single and multi-valued calculus were being covered.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Complex Numbers <br> and Analysis <br><i class="fas fa-info"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course content covered the topics of complex analysis.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Intro To <br> Life Sciences <br><i class="fas fa-bacterium"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            The course content covered basics of biological engineering.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Python For <br> Everybody[Py4E] <br><i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            Cousera's MOOC Course instructed by Dr.Severance.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="heading">
+                                Learning How <br> To Learn <br><i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="cardback">
+                            Cousera's MOOC Course instructed by Barbara Oakley.
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle2"><h1> Projects: </h1></div>
+                <div class = "project owl-carousel">
+                    <div class="cardinner">
+                        <div class = "cardfront">
+                            <div class="image">
+                                <img src="{%static 'img/IMG_6478.JPG' %}">
+                            </div>
+                        </div>
+                        <div class="back">
+                            Design Project: We were to identify, observe, analyse and come up with a solution to a problem in daily life. Came up with a redesigned workdesk after sketching and multiple ideas.
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="image">
+                                <img src="{%static 'img/x-wing - Copy.jpeg' %}">
+                                <div class="group">Group Project</div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            A Group Project(Engng Graphics): We were to design an Autodesk Inventor model in a group of 10(after individual designing and assembly). Came up with a model of X-Wing Aircraft (working).
+                        </div>
+                    </div>
+                    <div class = "cardinner">
+                        <div class = "cardfront">
+                            <div class="image">
+                                <img src="{%static 'img/gecherry.png' %}">
+                            </div>
+                        </div>
+                        <div class="back">
+                            Computing Project(Ge'Cherry): Made a modified game of Pacman, using PyGame and some other Python libraries. Check it out here: <a href="https://github.com/JINAY08/Ge-Cherry-Jinay-Dagli-20110084-"><u> Github link </u></a>
+                        </div>
+                    </div>
+        </section>
+
+<!-- accomplishments section is here -->
+        <section class="accomplishment" id="accomplishment">
+            <div class="title">Timeline</div>
+            <div class="main-container">
+                <!-- event 1st of timeline -->
+                <div class="text-wrapper right">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3>July 2021</h3>
+                        <p>Completed first year with 9.13/10 CPI</p>
+                    </div>
+                </div>
+                <div class="text-wrapper left">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3>March 2021</h3>
+                        <p>Dean's List for Sem-2(2020-21) </p>
+                    </div>
+                </div>
+                <!-- event 1st of timeline -->
+                <div class="text-wrapper right">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3>September 2020</h3>
+                        <p>JEE Advanced AIR:2310</p>
+                    </div>
+                </div>
+                <!-- event 1st of timeline -->
+                <div class="text-wrapper left">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3>September 2020</h3>
+                        <p> JEE Mains AIR: 9319 </p>
+                    </div>
+                </div>
+                <!-- event 1st of timeline -->
+                <div class="text-wrapper right">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3> July 2020</h3>
+                        <p> Class XII (CBSE) : 97.2 % </p>
+                    </div>
+                </div>
+                <div class="text-wrapper left">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3> August 2019 </h3>
+                        <p> Canadian Senior Mathematics Contest(University of Waterloo) : Certificate of Distinction </p>
+                    </div>
+                </div>
+                <div class="text-wrapper right">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3> July 2018 </h3>
+                        <p> Class X (CBSE) : 99 % </p>
+                    </div>
+                </div>
+                <div class="text-wrapper left">
+                    <!-- all text content of timeline -->
+                    <div class="content">
+                        <h3> August 2018 </h3>
+                        <p> Award for Academic Excellence </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Contact Me -->
+        <section class="contact" id="contact">
+            <div class = "title">Get In Touch</div>
+            <div class = "forms">
+                <div class = "contact_content">
+                    <form action="subscriberform.php" method="POST">
+                        <div class="field">
+                            <div class="fieldname">
+                                <input type="text" placeholder="Please enter your name">
+                            </div><br>
+                            <div class="fieldemail">
+                                <input type="email" placeholder="Please enter your email">
+                            </div><br>
+                            <div class="fielddescrp">
+                                <textarea cols="30" rows="10" placeholder="Description"></textarea>
+                            </div><br>
+                            <div class="submit">
+                                <button type="submit"> Send </button>
+                                <button type="reset"> Reset </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class = "thanks">
+                Thanks for visiting
+            </div> 
+        </section>
+
+    <!-- footer -->
+        <footer>
+            Made with <i class = "fas fa-coffee fa-xs"></i> and <i class = "fas fa-cookie-bite fa-xs" style="color:brown;"></i> by Jinay
+        </footer>
+        <script src = "{%static '/js/script1.js' %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".project").owlCarousel({
+                    loop: false,
+                    margin: 0,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsive : {
+                        0 : {
+                            items : 1,
+                            nav : true
+                        },
+                        600: {
+                            items : 3,
+                            nav : true
+                        },
+                        1000: {
+                            items : 5,
+                            nav : true
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
