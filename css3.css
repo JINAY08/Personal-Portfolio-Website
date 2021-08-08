@@ -142,7 +142,7 @@
     border-color: #aaffff;
     border-radius: 5px;
     /* padding: 20px 20px; */
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'KoHo', sans-serif;
     font-size: 20px;
     background: #00dddd;
     display: inline-flex;
@@ -283,6 +283,19 @@
     font-family: 'KoHo','sans-serif';
 }
 
+.cardinner .back{
+    text-align: center;
+    background: white;
+    color: #00dddd;
+    transform: rotateY(180deg);
+    height: 100%;
+    border-style: solid;
+    border-color: #00dddd;
+    font-size: 18px;
+    text-overflow: clip;
+    font-family: 'KoHo','sans-serif';
+}
+
 .cardinner .cardfront .heading{
     font-size: 25px;
     padding-top: 25%;
@@ -293,6 +306,31 @@
     width: 205px;
     height: 140px;
     /* object-fit: cover;  */
+}
+
+.subtitle1, .subtitle2{
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    font-family: 'KoHo','sans-serif';
+    color: red;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.subtitle1 h1, .subtitle2 h1{
+    justify-content: center;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    letter-spacing: .1em;
+    animation: 
+    typing 2s steps(30) 3s infinite;
+}
+
+@keyframes typing{
+    from {width: 0%} 
+    to {width: 100%}
 }
 
 .group{
@@ -342,6 +380,76 @@
 .accomplishment{
     background: cyan;
     padding-top: 60px;
+}
+
+.main-container{
+    position: relative;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*creating line for timeline*/
+.main-container::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: lightsalmon;
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    /* margin: 50px 0; */
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: -10px;
+    background-color:red;
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*for left events*/
+.left{
+    left: 0;
+}
+/*for right events*/
+.right{
+    left:50%;
+}
+.right::after{
+    left:-10px;
+}
+/*content box colour padding and radius for circular corner*/
+.content{
+    padding: 15px 15px 15px 17px;
+    background-color: #00dddd;
+    border-radius: 4px;
+}
+/*setting text property of event heading*/
+.content h3{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+    font-family: 'KoHo','sans-serif';
 }
 
 /* contact me styling goes here */
@@ -414,7 +522,7 @@
     /* margin-right: 20px; */
     padding-left: 20px;
     margin-left: 700px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     margin-top: -200px;
     border-radius: 60%;
     border-style: double;
@@ -510,4 +618,14 @@ footer{
         background: cyan;
         background-image: none;
     }
+
+    .contact .forms .contact_content .field .submit button{
+        margin-right: 30px;
+        width: 50px;
+        height: 3vh;
+        border-radius: 8px;
+        background: red;
+        color: white;
+        cursor: pointer;
+   }
 }
